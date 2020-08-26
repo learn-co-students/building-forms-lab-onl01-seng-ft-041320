@@ -1,7 +1,5 @@
 import React from "react";
 
-import {connect} from 'react-redux'
-
 const Bands = props => {
     const bands = props.bands.map((band, index) => {
         return <li key={index}>{band.name}</li>;
@@ -10,9 +8,4 @@ const Bands = props => {
     return <div>{bands}</div>;
 };
 
-const mapStateToProps = state => {
-    return { bands: state.bands };
-};
-
-
-export default connect(mapStateToProps)(Bands);
+export default Bands;
