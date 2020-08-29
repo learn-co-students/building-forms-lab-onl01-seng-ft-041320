@@ -6,11 +6,12 @@ class App extends Component {
     return (
       <div className="App">
         <BandsContainer />
-        {console.log("in the app.js render", this.props)}
-        {console.log("in the app.js render", this.state)}
+        
+        
       </div>
     );
   }
 };
 
 export default App;
+//{console.log("in the app.js render", this.props)}

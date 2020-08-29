@@ -11,14 +11,14 @@ handleChange = event => {
   this.setState({
     [event.target.name] : event.target.value
   });
-  // console.log("we are changing this state",this.state)
+ 
 }
 
 handleSubmit = event => {
   event.preventDefault()
-  // console.log('when submitting this is the state',this.state.undefined)
+  
   let band =  this.state
-console.log('this is the BAND name', band.name)
+
   // debugger;
   
   this.props.addBand(band)
@@ -27,9 +27,6 @@ console.log('this is the BAND name', band.name)
   })
 }
 
-// componentDidUpdate(){
-//   console.log("in the update component", this.props.addBand)
-// }
 
   render() {
     return(
@@ -49,3 +46,12 @@ console.log('this is the BAND name', band.name)
 }
 
 export default BandInput
+
+
+ // console.log("we are changing this state",this.state)
+ // console.log('when submitting this is the state',this.state.undefined)
+
+ // componentDidUpdate(){
+//   console.log("in the update component", this.props.addBand)
+// }
+//console.log('this is the BAND name', band.name)

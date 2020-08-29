@@ -16,6 +16,8 @@ class BandsContainer extends Component {
         this.props.bands.map((band, index) => <li key={index}>{band.name}</li>)
         : <li>nothing yet</li>
         }
+
+{ {this.props.bands.map((band, index) => <li key={index}>{band.name}</li>)} */}
       </div>
     )
   }
