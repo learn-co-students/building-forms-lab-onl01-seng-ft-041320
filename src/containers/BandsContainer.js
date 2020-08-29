@@ -11,13 +11,13 @@ class BandsContainer extends Component {
       <div>
         <BandInput addBand={this.props.addBand}/>
          {/* {console.log("i'm in the render", this.props)} */}
-         
+{/*          
         { this.props.bands.length !== 0 ?
         this.props.bands.map((band, index) => <li key={index}>{band.name}</li>)
         : <li>nothing yet</li>
-        }
+        } */}
 
-{ {this.props.bands.map((band, index) => <li key={index}>{band.name}</li>)} */}
+{ this.props.bands.map((band, index) => <li key={index}>{band.name}</li>) }
       </div>
     )
   }
