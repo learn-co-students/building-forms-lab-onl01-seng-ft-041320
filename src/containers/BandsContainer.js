@@ -25,7 +25,13 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(null, mapDispatchToProps)(BandsContainer)
+const mapStateToProps =(state) =>{
+  return {
+    bands: state.band
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(BandsContainer)
 
 
 // return{
