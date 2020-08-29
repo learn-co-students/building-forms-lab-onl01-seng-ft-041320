@@ -3,10 +3,10 @@ export default function manageBand(state = {
 }, action) {
   switch(action.type){
   case 'ADD_BAND':
-    console.log('Current state.items length %s', state.bands.length);
-    console.log('Updating state.items length to %s', state.bands.length + 1);
-    console.log('this is the current state', state.bands)
-    debugger;
+    // console.log('Current state.items length %s', state.bands.length);
+    // console.log('Updating state.items length to %s', state.bands.length + 1);
+    // console.log('this is the current state', state.bands)
+    // debugger;
     return {...state,
     bands: state.bands.concat(action.band)
     //currently tests are saying expected action.band to equal something but it is nothing
