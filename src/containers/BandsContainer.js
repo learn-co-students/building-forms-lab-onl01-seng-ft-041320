@@ -27,7 +27,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps =(state) =>{
   return {
-    bands: state.band
+    bands: state.bands
   }
 }
 
